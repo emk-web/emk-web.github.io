@@ -1,12 +1,116 @@
-<!-- CV Section -->
-<section id="cv">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrical CV</title>
+
+<!-- Google Font: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Reset & base */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+}
+
+body{
+background:#f5f6fa;
+color:#1e293b;
+line-height:1.6;
+}
+
+/* Container */
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+padding:60px 0;
+}
+
+/* Section Titles */
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+text-align:center;
+background: linear-gradient(90deg,#38bdf8,#f472b6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* CV Section */
+.cv-section{
+background:white;
+padding:30px 35px;
+border-radius:16px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+margin-bottom:40px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cv-section:hover{
+transform: translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.cv-section h3{
+font-size:22px;
+color:#3b82f6;
+margin-bottom:15px;
+font-weight:600;
+}
+
+.cv-section h4{
+font-size:18px;
+color:#f43f5e;
+margin-top:12px;
+margin-bottom:8px;
+font-weight:500;
+}
+
+.cv-section ul{
+list-style: disc;
+margin-left:20px;
+margin-top:8px;
+}
+
+.cv-section ul li{
+margin-bottom:6px;
+opacity:0.85;
+font-size:15px;
+}
+
+/* Personal Info */
+.personal p{
+margin-bottom:5px;
+opacity:0.8;
+font-size:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.cv-section{
+padding:25px;
+}
+.section-title{
+font-size:24px;
+}
+}
+</style>
+</head>
+
+<body>
+
 <div class="container">
 
 <h2 class="section-title">Curriculum Vitae</h2>
 
-<div class="cv-container">
-
-<!-- PERSONAL INFO -->
+<!-- Personal Info -->
 <div class="cv-section personal">
 <h3>Personal Information</h3>
 <p><strong>Name:</strong> Lars Hansen</p>
@@ -16,58 +120,52 @@
 <p><strong>LinkedIn:</strong> linkedin.com/in/lars-hansen</p>
 </div>
 
-<!-- SUMMARY -->
+<!-- Summary -->
 <div class="cv-section">
 <h3>Professional Summary</h3>
-<p>
-Experienced Electrical Technician with 5+ years in industrial and residential electrical systems. 
-Skilled in maintenance, troubleshooting, and installation with strong knowledge of Danish electrical regulations and safety standards. 
-Seeking to contribute technical expertise in a dynamic engineering environment.
-</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
-<!-- SKILLS -->
+<!-- Skills -->
 <div class="cv-section">
 <h3>Technical Skills</h3>
 <ul>
 <li>Electrical Installation & Maintenance</li>
 <li>PLC Programming</li>
 <li>Automation Systems</li>
-<li>Electrical Safety & Compliance (DS/EN standards)</li>
+<li>Electrical Safety & Compliance</li>
 <li>Troubleshooting & Preventive Maintenance</li>
 <li>CAD & Electrical Schematics</li>
 </ul>
 </div>
 
-<!-- EXPERIENCE -->
+<!-- Experience -->
 <div class="cv-section">
 <h3>Professional Experience</h3>
-
 <h4>Electrical Technician – Energi Danmark A/S</h4>
 <p><em>Jan 2021 – Present | Copenhagen, Denmark</em></p>
 <ul>
-<li>Maintained and repaired electrical systems for industrial machinery.</li>
-<li>Installed PLC-controlled automation systems improving production efficiency by 15%.</li>
-<li>Ensured compliance with Danish electrical safety regulations.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Proin gravida nibh vel velit auctor aliquet.</li>
+<li>Faucibus porta lacus fringilla vel.</li>
 </ul>
 
 <h4>Junior Electrician – Dansk El-Service</h4>
 <p><em>Jun 2018 – Dec 2020 | Copenhagen, Denmark</em></p>
 <ul>
-<li>Performed residential electrical installations and troubleshooting.</li>
-<li>Assisted in preventive maintenance programs, reducing downtime by 20%.</li>
-<li>Prepared electrical schematics and technical reports for clients.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Proin gravida nibh vel velit auctor aliquet.</li>
+<li>Faucibus porta lacus fringilla vel.</li>
 </ul>
-
 </div>
 
-<!-- EDUCATION -->
+<!-- Education -->
 <div class="cv-section">
 <h3>Education</h3>
 <p><strong>Vocational Training in Electrical Technology</strong> – Københavns Tekniske Skole, Denmark (2015 – 2018)</p>
 </div>
 
-<!-- LANGUAGES -->
+<!-- Languages -->
 <div class="cv-section">
 <h3>Languages</h3>
 <ul>
@@ -76,7 +174,7 @@ Seeking to contribute technical expertise in a dynamic engineering environment.
 </ul>
 </div>
 
-<!-- CERTIFICATIONS -->
+<!-- Certifications -->
 <div class="cv-section">
 <h3>Certifications</h3>
 <ul>
@@ -86,77 +184,6 @@ Seeking to contribute technical expertise in a dynamic engineering environment.
 </div>
 
 </div>
-</section>
 
-<!-- CV Section CSS -->
-<style>
-/* CV Section Styles */
-#cv{
-padding:80px 0;
-background: #0f172a;
-color: white;
-}
-
-.cv-container{
-display:flex;
-flex-direction:column;
-gap:40px;
-max-width:900px;
-margin:auto;
-}
-
-.cv-section{
-background:#1e293b;
-padding:25px 30px;
-border-radius:12px;
-transition:0.3s;
-}
-
-.cv-section:hover{
-transform:translateY(-5px);
-}
-
-.cv-section h3{
-margin-bottom:15px;
-font-size:24px;
-color:#38bdf8;
-}
-
-.cv-section h4{
-margin-top:15px;
-font-size:20px;
-color:#facc15;
-}
-
-.cv-section ul{
-list-style: disc;
-margin-left:20px;
-margin-top:10px;
-}
-
-.cv-section ul li{
-margin-bottom:8px;
-opacity:0.9;
-}
-
-.personal p{
-margin-bottom:6px;
-opacity:0.8;
-}
-
-.section-title{
-text-align:center;
-font-size:32px;
-margin-bottom:50px;
-}
-
-@media(max-width:768px){
-.cv-container{
-gap:25px;
-}
-
-.cv-section{
-padding:20px;
-}
-}
-</style>
+</body>
+</html>
