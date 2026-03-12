@@ -1,27 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+nav h1{
+font-size:24px;
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:400;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+padding:120px 0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+opacity:0.8;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:14px 28px;
+border:none;
+background:#38bdf8;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#0ea5e9;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+/* EXPERIENCE */
+
+.experience{
+display:grid;
+gap:25px;
+}
+
+.job{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin-bottom:20px;
+opacity:0.8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px 0;
+opacity:0.6;
+font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Merhaba ben [Adın]</h1>
+<div class="container">
 
-<p>Ben bir developer / designer / marketer.</p>
-
-<h2>Projects</h2>
-
+<nav>
+<h1>MyPortfolio</h1>
 <ul>
-<li>Project 1</li>
-<li>Project 2</li>
-<li>Project 3</li>
+<li><a href="#">Home</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Experience</a></li>
+<li><a href="#">Contact</a></li>
 </ul>
+</nav>
 
-<h2>Contact</h2>
+</div>
 
-<p>Email: your@email.com</p>
+<section class="hero">
+<div class="container hero">
+
+<div class="hero-text">
+
+<h2>Lorem Ipsum Developer</h2>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+<button>Download CV</button>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Lorem Skill</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+</div>
+
+<div class="skill">
+<h3>Lorem Skill</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+</div>
+
+<div class="skill">
+<h3>Lorem Skill</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+</div>
+
+<div class="skill">
+<h3>Lorem Skill</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Project Title</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<div class="project">
+<h3>Project Title</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<div class="project">
+<h3>Project Title</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="experience">
+
+<div class="job">
+<h3>Job Title</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+</div>
+
+<div class="job">
+<h3>Job Title</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<p>Email: lorem@email.com</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Lorem Portfolio</p>
+
+</footer>
 
 </body>
 </html>
